@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00538A45-738E-4C08-91B5-1FEA7C784F81}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HokieHelper</RootNamespace>
+    <AssemblyName>HokieHelper</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>HokieHelper_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>HokieHelper.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>5.0.40218.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;USE_WP8_NATIVE_SQLITE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AlphaKeyGroup.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BTransit.xaml.cs">
+      <DependentUpon>BTransit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerConsult.xaml.cs">
+      <DependentUpon>ComputerConsult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContactInfo.xaml.cs">
+      <DependentUpon>ContactInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CookCenter.xaml.cs">
+      <DependentUpon>CookCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DeanStudent.xaml.cs">
+      <DependentUpon>DeanStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dining.xaml.cs">
+      <DependentUpon>Dining.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DiningHours.cs" />
+    <Compile Include="DiningInfoList.xaml.cs">
+      <DependentUpon>DiningInfoList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Environmental.xaml.cs">
+      <DependentUpon>Environmental.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FacilitiesServices.xaml.cs">
+      <DependentUpon>FacilitiesServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPageMain.xaml.cs">
+      <DependentUpon>InfoPageMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Maps.xaml.cs">
+      <DependentUpon>Maps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Nutrition.xaml.cs">
+      <DependentUpon>Nutrition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NutritionItems.cs" />
+    <Compile Include="ParkingServices.xaml.cs">
+      <DependentUpon>ParkingServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Police.xaml.cs">
+      <DependentUpon>Police.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recreational.xaml.cs">
+      <DependentUpon>Recreational.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegistarOffice.xaml.cs">
+      <DependentUpon>RegistarOffice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SafeRide.xaml.cs">
+      <DependentUpon>SafeRide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Schiffert.xaml.cs">
+      <DependentUpon>Schiffert.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="WomensCenter.xaml.cs">
+      <DependentUpon>WomensCenter.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="BTransit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ComputerConsult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ContactInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CookCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DeanStudent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dining.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiningInfoList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Environmental.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FacilitiesServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="InfoPageMain.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Maps.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Nutrition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ParkingServices.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Police.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Recreational.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RegistarOffice.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SafeRide.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Schiffert.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WomensCenter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DiningHours.rdb" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\DiningHours.rdb" />
+    <None Include="Resources\nutrition.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="README_FIRST.txt" />
+    <Content Include="Resources\abp_squires.jpg" />
+    <Content Include="Resources\agnew_hall.jpg" />
+    <Content Include="Resources\AlignmentGrid.png" />
+    <Content Include="Resources\ambler_johnston_hall.jpg" />
+    <Content Include="Resources\ApplicationIcon.png" />
+    <Content Include="Resources\architecture_annex.jpg" />
+    <Content Include="Resources\armory.jpg" />
+    <Content Include="Resources\art_and_design_learning_center.jpg" />
+    <Content Include="Resources\barringer_hall.jpg" />
+    <Content Include="Resources\basketball_practice_facility.jpg" />
+    <Content Include="Resources\bioinformatics_phase1.jpg" />
+    <Content Include="Resources\bioinformatics_phase2.jpg" />
+    <Content Include="Resources\bishop_favrao_hall.jpg" />
+    <Content Include="Resources\blacksburg_gov.png" />
+    <Content Include="Resources\blacksburg_stuff.png" />
+    <Content Include="Resources\brodie_hall.jpg" />
+    <Content Include="Resources\br_vt_hokies.png" />
+    <Content Include="Resources\btransit_logo.png" />
+    <Content Include="Resources\burchard_hall.jpg" />
+    <Content Include="Resources\burke_johnston_student_center.jpg" />
+    <Content Include="Resources\burrows_burleson_tennis_center.jpg" />
+    <Content Include="Resources\burruss_hall.jpg" />
+    <Content Include="Resources\BusBG.jpg" />
+    <Content Include="Resources\bus_bg.png" />
+    <Content Include="Resources\campbell_hall.jpg" />
+    <Content Include="Resources\cassell_coliseum.jpg" />
+    <Content Include="Resources\cheatham_hall.jpg" />
+    <Content Include="Resources\cochrane_hall.jpg" />
+    <Content Include="Resources\college_of_science_administration_building.jpg" />
+    <Content Include="Resources\collegiate_times.png" />
+    <Content Include="Resources\cowgill_hall.jpg" />
+    <Content Include="Resources\cranwell_international_center.jpg" />
+    <Content Include="Resources\d01.png" />
+    <Content Include="Resources\d02.png" />
+    <Content Include="Resources\d03.png" />
+    <Content Include="Resources\d05.png" />
+    <Content Include="Resources\d06.png" />
+    <Content Include="Resources\d07.png" />
+    <Content Include="Resources\d08.png" />
+    <Content Include="Resources\d2.jpg" />
+    <Content Include="Resources\dairy_science_complex.jpg" />
+    <Content Include="Resources\davidson_hall.jpg" />
+    <Content Include="Resources\deets.jpg" />
+    <Content Include="Resources\derring_hall.jpg" />
+    <Content Include="Resources\dietrick_hall.jpg" />
+    <Content Include="Resources\directions_button.png" />
+    <Content Include="Resources\divider.png" />
+    <Content Include="Resources\durham_hall.jpg" />
+    <Content Include="Resources\eggleston_hall.jpg" />
+    <Content Include="Resources\engel_hall.jpg" />
+    <Content Include="Resources\exclamation_point.png" />
+    <Content Include="Resources\femoyer_hall.jpg" />
+    <Content Include="Resources\food_science_and_technology.jpg" />
+    <Content Include="Resources\fralin_life_science_institute.jpg" />
+    <Content Include="Resources\GLC.jpg" />
+    <Content Include="Resources\golf_course.png" />
+    <Content Include="Resources\graduate_life_center_at_donaldson_brown.jpg" />
+    <Content Include="Resources\hahn_hall_north.jpg" />
+    <Content Include="Resources\hahn_hall_south.jpg" />
+    <Content Include="Resources\hahn_horticultural_gardens.jpg" />
+    <Content Include="Resources\hancock_hall.jpg" />
+    <Content Include="Resources\harper_hall.jpg" />
+    <Content Include="Resources\health_and_safety_building.jpg" />
+    <Content Include="Resources\henderson_hall.jpg" />
+    <Content Include="Resources\hillcrest_hall.jpg" />
+    <Content Include="Resources\hokies_buzz_tap.png" />
+    <Content Include="Resources\hokie_grill.jpg" />
+    <Content Include="Resources\holden_hall.jpg" />
+    <Content Include="Resources\holtzman_alumni_center.jpg" />
+    <Content Include="Resources\icon_clock.png" />
+    <Content Include="Resources\icon_dollar_sign.png" />
+    <Content Include="Resources\icon_food.png" />
+    <Content Include="Resources\icon_map.png" />
+    <Content Include="Resources\icon_phone.png" />
+    <Content Include="Resources\icon_search.png" />
+    <Content Include="Resources\icon_track.png" />
+    <Content Include="Resources\ictas.jpg" />
+    <Content Include="Resources\info_icon.png" />
+    <Content Include="Resources\jamerson_athletic_center.jpg" />
+    <Content Include="Resources\johnson_hall.jpg" />
+    <Content Include="Resources\lane_hall.jpg" />
+    <Content Include="Resources\lane_stadium.jpg" />
+    <Content Include="Resources\latham_hall.jpg" />
+    <Content Include="Resources\lee_hall.jpg" />
+    <Content Include="Resources\life_sciences1_facility.jpg" />
+    <Content Include="Resources\litton_reaves_hall.jpg" />
+    <Content Include="Resources\logo_abp_cafe.png" />
+    <Content Include="Resources\logo_abp_cafe_ex.png" />
+    <Content Include="Resources\logo_abp_glc.png" />
+    <Content Include="Resources\logo_abp_glc_ex.png" />
+    <Content Include="Resources\logo_abp_kiosk.png" />
+    <Content Include="Resources\logo_abp_kiosk_ex.png" />
+    <Content Include="Resources\logo_atomic_pizzeria.png" />
+    <Content Include="Resources\logo_atomic_pizzeria_ex.png" />
+    <Content Include="Resources\logo_brueggers_bagels.png" />
+    <Content Include="Resources\logo_brueggers_bagels_ex.png" />
+    <Content Include="Resources\logo_d2.png" />
+    <Content Include="Resources\logo_d2_ex.png" />
+    <Content Include="Resources\logo_deets.png" />
+    <Content Include="Resources\logo_deets_ex.png" />
+    <Content Include="Resources\logo_dolci_e_caffe.png" />
+    <Content Include="Resources\logo_dolci_e_caffe_ex.png" />
+    <Content Include="Resources\logo_dx.png" />
+    <Content Include="Resources\logo_dx_ex.png" />
+    <Content Include="Resources\logo_fire_grill.png" />
+    <Content Include="Resources\logo_fire_grill_ex.png" />
+    <Content Include="Resources\logo_hokiehelper.png" />
+    <Content Include="Resources\logo_hokie_grill.png" />
+    <Content Include="Resources\logo_hokie_grill_ex.png" />
+    <Content Include="Resources\logo_jamba_juice.png" />
+    <Content Include="Resources\logo_jamba_juice_ex.png" />
+    <Content Include="Resources\logo_origami.png" />
+    <Content Include="Resources\logo_origami_ex.png" />
+    <Content Include="Resources\logo_owens.png" />
+    <Content Include="Resources\logo_owens_ex.png" />
+    <Content Include="Resources\logo_qdoba.png" />
+    <Content Include="Resources\logo_qdoba_ex.png" />
+    <Content Include="Resources\logo_sbarro.png" />
+    <Content Include="Resources\logo_sbarro_ex.png" />
+    <Content Include="Resources\logo_soup_garden.png" />
+    <Content Include="Resources\logo_soup_garden_ex.png" />
+    <Content Include="Resources\logo_west_end.png" />
+    <Content Include="Resources\logo_west_end_ex.png" />
+    <Content Include="Resources\major_hall.jpg" />
+    <Content Include="Resources\maps_background.jpg" />
+    <Content Include="Resources\maroonBG.jpg" />
+    <Content Include="Resources\mcbryde_hall.jpg" />
+    <Content Include="Resources\mccomas_hall.jpg" />
+    <Content Include="Resources\media_annex.jpg" />
+    <Content Include="Resources\media_building.jpg" />
+    <Content Include="Resources\menu_dining_icon.png" />
+    <Content Include="Resources\menu_dining_icon_selected.png" />
+    <Content Include="Resources\menu_information_icon.png" />
+    <Content Include="Resources\menu_information_icon_selected.png" />
+    <Content Include="Resources\menu_maps_icon.png" />
+    <Content Include="Resources\menu_maps_icon_selected.png" />
+    <Content Include="Resources\menu_twitterfeed_icon.png" />
+    <Content Include="Resources\menu_twitterfeed_icon_selected.png" />
+    <Content Include="Resources\merryman_athletic_center.jpg" />
+    <Content Include="Resources\miles_hall.jpg" />
+    <Content Include="Resources\military_building.jpg" />
+    <Content Include="Resources\monteith_hall.jpg" />
+    <Content Include="Resources\n01.png" />
+    <Content Include="Resources\n02.png" />
+    <Content Include="Resources\n03.png" />
+    <Content Include="Resources\n05.png" />
+    <Content Include="Resources\n06.png" />
+    <Content Include="Resources\n07.png" />
+    <Content Include="Resources\n08.png" />
+    <Content Include="Resources\newman_hall.jpg" />
+    <Content Include="Resources\newman_library.jpg" />
+    <Content Include="Resources\new_hall_east.jpg" />
+    <Content Include="Resources\new_hall_west.jpg" />
+    <Content Include="Resources\new_residence_hall_east.jpg" />
+    <Content Include="Resources\norris_hall.jpg" />
+    <Content Include="Resources\NutritionFacts_Table.png" />
+    <Content Include="Resources\old_security_building.jpg" />
+    <Content Include="Resources\oshag_hall.jpg" />
+    <Content Include="Resources\oshaughnessy_hall.jpg" />
+    <Content Include="Resources\owens_hall.jpg" />
+    <Content Include="Resources\owens_mailroom.jpg" />
+    <Content Include="Resources\pamplin_hall.jpg" />
+    <Content Include="Resources\parking_services.jpg" />
+    <Content Include="Resources\patton_hall.jpg" />
+    <Content Include="Resources\payne_hall.jpg" />
+    <Content Include="Resources\peddrew_yates_hall.jpg" />
+    <Content Include="Resources\performing_arts_building.jpg" />
+    <Content Include="Resources\pin.png" />
+    <Content Include="Resources\pritchard_hall.jpg" />
+    <Content Include="Resources\refresh.png" />
+    <Content Include="Resources\ribbon_mid.png" />
+    <Content Include="Resources\ribbon_start.png" />
+    <Content Include="Resources\sandy_hall.jpg" />
+    <Content Include="Resources\saunders_hall.jpg" />
+    <Content Include="Resources\sbarro.jpg" />
+    <Content Include="Resources\seitz_hall.jpg" />
+    <Content Include="Resources\shanks_hall.jpg" />
+    <Content Include="Resources\skelton_conference_center.jpg" />
+    <Content Include="Resources\slide_back.png" />
+    <Content Include="Resources\sliding_handle_bottom.png" />
+    <Content Include="Resources\slusher_hall.jpg" />
+    <Content Include="Resources\smith_career_center.jpg" />
+    <Content Include="Resources\solitude.jpg" />
+    <Content Include="Resources\southgate_center.jpg" />
+    <Content Include="Resources\SplashScreenImage.screen-720p.jpg" />
+    <Content Include="Resources\SplashScreenImage.screen-WVGA.jpg" />
+    <Content Include="Resources\SplashScreenImage.screen-WXGA.jpg" />
+    <Content Include="Resources\squires_student_center.jpg" />
+    <Content Include="Resources\student_services_building.jpg" />
+    <Content Include="Resources\surge_space_building.jpg" />
+    <Content Include="Resources\tab_left_handle.png" />
+    <Content Include="Resources\tab_right_handle.png" />
+    <Content Include="Resources\tech_sideline.png" />
+    <Content Include="Resources\test_icon.png" />
+    <Content Include="Resources\theatre_101.jpg" />
+    <Content Include="Resources\the_grove.jpg" />
+    <Content Include="Resources\the_inn_at_virginia_tech.jpg" />
+    <Content Include="Resources\the_vtu.png" />
+    <Content Include="Resources\thomas_hall.jpg" />
+    <Content Include="Resources\toggle_minus.png" />
+    <Content Include="Resources\toggle_plus.png" />
+    <Content Include="Resources\torgersen_hall.jpg" />
+    <Content Include="Resources\tray_handle_normal.png" />
+    <Content Include="Resources\turner_place.jpg" />
+    <Content Include="Resources\twit_feed_main_icon.png" />
+    <Content Include="Resources\university.png" />
+    <Content Include="Resources\university_bookstore.jpg" />
+    <Content Include="Resources\university_club.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Resource Include="maps_background.jpg" />
+    <Resource Include="Resources\unknown.gif" />
+    <Content Include="Resources\vawter_hall.jpg" />
+    <Content Include="Resources\vet-med.jpg" />
+    <Content Include="Resources\virginia_tech.png" />
+    <Content Include="Resources\visitor_information_center.jpg" />
+    <Content Include="Resources\vt_edu.png" />
+    <Content Include="Resources\vt_engineering.png" />
+    <Content Include="Resources\vt_football.png" />
+    <Content Include="Resources\vt_hokies_sports.png" />
+    <Content Include="Resources\vt_news.png" />
+    <Content Include="Resources\vt_rhf.png" />
+    <Content Include="Resources\vt_sga.png" />
+    <Content Include="Resources\walking_icon.png" />
+    <Content Include="Resources\wallace_hall.jpg" />
+    <Content Include="Resources\war_memorial_chapel.jpg" />
+    <Content Include="Resources\war_memorial_hall.jpg" />
+    <Content Include="Resources\west_end.JPG" />
+    <Content Include="Resources\whittemore_hall.jpg" />
+    <Content Include="Resources\williams_hall.jpg" />
+    <Content Include="Resources\x04.png" />
+    <Content Include="Resources\x09.png" />
+    <Content Include="Resources\x10.png" />
+    <Content Include="Resources\x11.png" />
+    <Content Include="Resources\x12.png" />
+    <Content Include="Resources\x13.png" />
+    <Content Include="Resources\x14.png" />
+    <Content Include="Resources\x15.png" />
+    <Content Include="Resources\x16.png" />
+    <Content Include="Resources\x17.png" />
+    <Content Include="Resources\x18.png" />
+    <Content Include="Resources\x19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sqlite-net-wp8-master\Sqlite.vcxproj">
+      <Project>{59B35F6C-E062-4F0E-88D8-13F3F82A24F3}</Project>
+      <Name>Sqlite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.WP80, Version=3.8.0.2">
+      <Name>SQLite for Windows Phone</Name>
+    </SDKReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

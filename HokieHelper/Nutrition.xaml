@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage x:Name="NutritionPage"
+    x:Class="HokieHelper.Nutrition"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+    	<Grid.Background>
+    		<ImageBrush Stretch="Fill"/>
+    	</Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Resources/NutritionFacts_Table.png"/>
+            </Grid.Background>
+            <TextBlock x:Name="servingsize" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="142,79,0,0" Foreground="Black" FontSize="24"/>
+
+            <TextBlock x:Name="amtperserving" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="146,128,0,0" Foreground="Black"/>
+            <TextBlock x:Name="calories" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="83,164,0,0" Foreground="Black"/>
+            <TextBlock x:Name="fatcalories" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="172,201,0,0" Foreground="Black"/>
+            <TextBlock x:Name="totalfat" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="89,268,0,0" Foreground="Black"/>
+            <TextBlock x:Name="totalfatdv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,268,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="satfat" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="146,307,0,0" Foreground="Black"/>
+            <TextBlock x:Name="satfatdv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,307,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="transfat" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="116,345,0,0" Foreground="Black"/>
+            <TextBlock x:Name="cholesterol" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="110,383,0,0" Foreground="Black"/>
+            <TextBlock x:Name="cholesteroldv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,383,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="sodium" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="77,421,0,0" Foreground="Black"/>
+            <TextBlock x:Name="sodiumdv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,421,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="carbs" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="166,457,0,0" Foreground="Black"/>
+            <TextBlock x:Name="carbsdv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,457,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="fiber" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="137,496,0,0" Foreground="Black"/>
+            <TextBlock x:Name="fiberdv" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="389,496,0,0" Foreground="Black" FontWeight="Bold"/>
+            <TextBlock x:Name="sugar" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="89,534,0,0" Foreground="Black"/>
+            <TextBlock x:Name="protein" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="72,572,0,0" Foreground="Black"/>
+            <TextBlock x:Name="vitaminA" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="98,616,0,0" Foreground="Black"/>
+            <TextBlock x:Name="vitaminC" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="98,655,0,0" Foreground="Black"/>
+            <TextBlock x:Name="calcium" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="83,693,0,0" Foreground="Black"/>
+            <TextBlock x:Name="iron" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="55,731,0,0" Foreground="Black"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

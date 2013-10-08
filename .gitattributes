@@ -1,0 +1,20 @@
+# Ease the pain of having to look at diffs by normalizing lines
+
+# Normalize any files not mentioned below
+* text=auto
+
+# Text Files for Visual Studio, Convert to CRLF on checkout
+*.cs     text eol=crlf
+*.sln    text eol=crlf
+*.csproj text eol=crlf
+*.vbproj text eol=crlf
+*.fsproj text eol=crlf
+*.dbproj text eol=crlf
+*.suo    text eol=crlf
+*.xaml   text eol=crlf
+*.md     text eol=crlf
+
+# These files should always be treated as binary
+*.jpg binary
+*.png binary
+*.ico binary
